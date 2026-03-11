@@ -1,0 +1,161 @@
+<html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Ficha de Inscrição</title>
+
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f2f2f2;
+}
+
+.container{
+    width:800px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 0 8px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.linha{
+    margin-bottom:15px;
+}
+
+label{
+    display:inline-block;
+    width:150px;
+}
+
+input, select{
+    padding:6px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+    width:250px;
+}
+
+.cep{
+    width:120px;
+}
+
+.telefone{
+    width:100px;
+}
+
+button{
+    display:block;
+    margin:30px auto 0 auto;
+    padding:12px 40px;
+    border:none;
+    border-radius:6px;
+    background:linear-gradient(#4da3ff,#1d6fd1);
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Ficha de Inscrição</h2>
+
+<form>
+
+<div class="linha">
+<label>Nome do candidato:</label>
+<input type="text" name="nome">
+</div>
+
+<div class="linha">
+<label>Endereço:</label>
+<input type="text" name="endereco" style="width:400px;">
+</div>
+
+<div class="linha">
+<label>CEP:</label>
+<input class="cep" type="text" name="cep">
+
+<select>
+<option>-- Cidade --</option>
+</select>
+
+<select>
+<option>-- UF --</option>
+</select>
+</div>
+
+<div class="linha">
+<label>Telefone:</label>
+<input class="telefone" type="text">
+<input class="telefone" type="text">
+<input class="telefone" type="text">
+</div>
+
+<div class="linha">
+<label>RG:</label>
+<input type="text">
+
+<label style="width:50px;">CPF:</label>
+<input type="text">
+
+<label style="width:60px;">Sexo:</label>
+<input type="radio" name="sexo"> Mas.
+<input type="radio" name="sexo"> Fem.
+</div>
+
+<div class="linha">
+<label>Escolaridade:</label>
+
+<select>
+<option>-- Selecione --</option>
+<option>Fundamental</option>
+<option>Médio</option>
+<option>Superior</option>
+</select>
+
+<label style="width:60px;">Email:</label>
+<input type="email">
+</div>
+
+<div class="linha">
+<label>Curso:</label>
+
+<select>
+<option>-- Selecione --</option>
+<option>Informática</option>
+<option>Administração</option>
+<option>Enfermagem</option>
+</select>
+
+<label style="width:180px;">Senha de acompanhamento:</label>
+<input type="password">
+</div>
+
+<button type="submit">CADASTRAR</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
